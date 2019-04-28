@@ -22,7 +22,7 @@ mongoose.connect(Db,({useNewUrlParser:true}))
 app.set('view engine','ejs');
 app.use(express.static(__dirname+'/public'));
 
-const routes = require('./routes')
+// const routes = require('./routes');
 
 
 //Helps to fetch the data from the form
