@@ -36,6 +36,6 @@ app.use('/',routes);
 
 
 //Creating the server
-app.listen(3000,()=>{
+app.listen(port,()=>{
 console.log("Server is created ... ")
 });
