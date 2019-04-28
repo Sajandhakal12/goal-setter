@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<h1> This is ejs </h1>
+<h2>Hey <%= name%>, here is your list of goals:</h2>
+	<div>
+		<ol class = "goals">
+			<%goals.map(function(goal){%>
+				<li class="goal-list"><%= goal.title%></li>
+				 <form action="/form/<%=goal._id%>?_method=DELETE" method="POST">
+				 <button type ="submit" onclick="return confirmDelete()">Delete</button>
+				 </form> 
+			<%}) %>
+			
+		</ol>
+	</div>
+
+	<script>
+		function confirmDelete(){
+			return confirm("Are is sure ?");
+		}
+	</script>
+
+<% include partials/footer %>
