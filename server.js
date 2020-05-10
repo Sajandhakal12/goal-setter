@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const routes = require("./routes/index")
 const methodOverride = require("method-override");
 const app = express();
-const port = process.env.PORT||3000;
+const port = process.env.PORT||4000;
 const Db = "mongodb+srv://sajan:sajan@cluster0-g04zi.mongodb.net/test?retryWrites=true"
 
 // app.get("/",(req,res)=>{
